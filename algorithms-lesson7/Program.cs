@@ -7,7 +7,7 @@ namespace algorithms_lesson7
         const int N = 10;
         const int M = 10;
 
-        static void Print2(int n, int m, int[,] a)
+        static void Print(int n, int m, int[,] a)
         {
             int i, j;
             for (i = 0; i < n; i++)
@@ -31,7 +31,7 @@ namespace algorithms_lesson7
                     A[i, j] = A[i, j - 1] + A[i - 1, j];
             }
 
-            Print2(N, M, A);
+            Print(N, M, A);
         }
     }
 
