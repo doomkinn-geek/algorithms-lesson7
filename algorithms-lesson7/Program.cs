@@ -5,7 +5,7 @@ namespace algorithms_lesson7
     class Program
     {
         const int N = 10;
-        const int M = 10;
+        const int M = 12;
 
         static void Print(int n, int m, int[,] a)
         {
@@ -13,7 +13,7 @@ namespace algorithms_lesson7
             for (i = 0; i < n; i++)
             {
                 for (j = 0; j < m; j++)
-                    Console.Write(a[i, j]);
+                    Console.Write("{0}\t",a[i, j]);
                 Console.Write("\r\n");
             }
         }
@@ -21,6 +21,8 @@ namespace algorithms_lesson7
         static void Main(string[] args)
         {
             int[,] A = new int[N, M];
+            //Print(N, M, A);
+            Console.WriteLine(new string('=', 90));
             int i, j;
             for (j = 0; j < M; j++)
                 A[0, j] = 1; 
